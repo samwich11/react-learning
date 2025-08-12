@@ -68,3 +68,16 @@ export default tseslint.config([
 ])
 ```
 # react-learning
+
+## Componentes
+  - Mínima unidad de código
+  ### Cómo no se debe crear un componente ✖️❌
+  ```bash
+    <button style={{ color: 'blue', backgroundColor: 'grey' }} onClick={() => parentMethod()}>
+  ```
+    Cada vez que se haga un click, crea un método y se ejecuta parentMethod(). Crea un método que ejecuta un método. Crea espacios de memoria cada vez que se hace un click.
+    ### Cómo se debe crear un componente ✅✔️
+  ```bash
+    <button style={{ color: 'blue', backgroundColor: 'grey' }} onClick={parentMethod}>
+  ```
+    Se debe pasar la referencia.

@@ -1,0 +1,12 @@
+.custom-button {
+    color: blue;
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: darkgrey;
+}
