@@ -9,9 +9,17 @@ function App() {
     setCount((count) => count + 1)
   }
 
+  const [name, setName] = useState("Daniel");
+
+  const changeName = () => {
+    setName("Estudiante")
+  }
+
   return (
     <>
         <Button label={`Count is ${count}`} parentMethod={countMore} />
+        <p>{name}</p>
+        <Button label={`Change Name`} parentMethod={changeName} />
     </>
   )
 }
